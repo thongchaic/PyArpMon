@@ -8,9 +8,8 @@ class ARPDispatch:
         self.dev = dev 
 
     def scan(self):
-        #for i in range(1,253):
-        while True:
-            ip="192.168.6.35"
+        for i in range(1,253):
+            ip="192.168.6."+str(i)
             arp = ARP()
             arp.set_src_hw("74:8f:3c:c2:4b:11")
             arp.set_src_ip("192.168.6.254")

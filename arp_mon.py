@@ -16,4 +16,3 @@ if __name__ == '__main__':
     dev=get_first_iface()
     print(dev)
     mon = ARPMon(dev)
-    mon.start()
